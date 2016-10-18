@@ -101,10 +101,10 @@ public class MainFragment extends Fragment {
             String movieJSON = null;
             try{
 
-                Uri builtUri = Uri.parse(Config.BASE_URL).buildUpon()
+                Uri builtUri = Uri.parse(Config.BASE_URL + params[0] + "?").buildUpon()
                         .appendQueryParameter("api_key", Config.API_KEY)
-                        .appendQueryParameter("vote_count.gte", "100")
-                        .appendQueryParameter("sort_by", params[0])
+                        .appendQueryParameter("language",Config.LANGUAGE)
+                        .appendQueryParameter("page",Config.PAGE)
                         .build();
 
                 URL url = new URL(builtUri.toString());

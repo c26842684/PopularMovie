@@ -2,8 +2,8 @@
     <string name="app_name">PopularMovie</string>
     <string name="action_settings">Settings</string>
     <string name="api">16be9b787d13a845bbdd443c93790352</string>
-    <string name="byrate">vote_average.desc</string>
-    <string name="bypopularity">popularity.desc</string>
+    <string name="byrate">top_rated</string>
+    <string name="bypopularity">popular</string>
     <string name="sort_key">cxx</string>
     <string name="title_activity_settings">Settings</string>
 
