@@ -28,7 +28,7 @@ public class DetailFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_detail,container,false);
         Intent intent = getActivity().getIntent();
         if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
-            Poster curr = intent.getBundleExtra(Intent.EXTRA_TEXT).getParcelable("key");
+            Poster curr = intent.getParcelableExtra(Intent.EXTRA_TEXT);
             ImageView img =(ImageView)rootView.findViewById(R.id.detail_image);
             Picasso.with(getActivity()).load(curr.image).into(img);
 

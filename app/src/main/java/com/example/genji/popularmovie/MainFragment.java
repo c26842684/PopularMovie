@@ -59,9 +59,7 @@ public class MainFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Poster temp = mPosterAdapter.getItem(position);
                 Intent intent = new Intent(getActivity(),DetailActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putParcelable("key",temp);
-                intent.putExtra(Intent.EXTRA_TEXT,bundle);
+                intent.putExtra(Intent.EXTRA_TEXT,temp);
                 startActivity(intent);
             }
         });
